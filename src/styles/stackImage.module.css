@@ -1,0 +1,5 @@
+@media screen and (max-width: 65rem) {
+	.stack {
+		display: none;
+	}
+}
