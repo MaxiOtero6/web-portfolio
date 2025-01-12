@@ -25,7 +25,7 @@ export default function Home() {
 					<a href={linkedinLink}>
 						<Image
 							src={linkedinLogo}
-							alt="LinkedIn"
+							alt="LinkedIn profile"
 							width={40}
 							height={40}
 						/>
@@ -33,7 +33,7 @@ export default function Home() {
 					<a href={githubLink}>
 						<Image
 							src={githubLogo}
-							alt="LinkedIn"
+							alt="Github profile"
 							width={40}
 							height={40}
 						/>
