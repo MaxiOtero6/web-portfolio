@@ -52,11 +52,10 @@ export function StackToImage(item: string) {
 
 	return (
 		<Image
+			className="h-[25px] w-[25px] min-h-[25px] min-w-[25px] lg:h-[40px] lg:w-[40px] md:h-[30px] md:w-[30px]"
 			key={item}
 			src={image}
 			alt={item}
-			height={30}
-			width={30}
 			style={{ objectFit: "contain" }}
 		/>
 	);

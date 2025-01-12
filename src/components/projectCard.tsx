@@ -21,7 +21,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 		<div className="h-2/6 w-full bg-[rgb(78,76,76)] border-white border-[0.5px] rounded-md flex flex-col">
 			<div>
 				<div
-					className={`p-2 flex flex-row place-content-between text-center items-center cursor-pointer ${
+					className={`p-2 w-full flex flex-row place-content-between text-center items-center cursor-pointer ${
 						expanded && "shadow-xl"
 					}`}
 					onClick={() => setExpanded(!expanded)}>
@@ -32,16 +32,13 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 							target="_blank"
 							rel="noreferrer">
 							<Image
-								className="h-[15px] w-[15px] lg:h-[40px] lg:w-[40px] md:h-[30px] md:w-[30px] sm:h-[20px] sm:w-[20px]"
+								className="h-[25px] w-[25px] min-h-[25px] min-w-[25px] lg:h-[40px] lg:w-[40px] md:h-[30px] md:w-[30px]"
 								src={githubLogo}
 								alt="GitHub repository"
 							/>
 						</a>
-						<label className="ml-2 cursor-pointer font-bold lg:text-xl md:text-lg sm:text-md xs:text-sm overflow-hidden whitespace-nowrap text-ellipsis">
-							{project.name}
-						</label>
-						<div
-							className={`flex flex-row ml-2 mt-2 mb-2 space-x-4 ${styles.stack}`}>
+						<div className="items-center ml-2 space-x-3 place-content-center flex flex-wrap flex-row cursor-pointer font-bold lg:text-xl md:text-lg sm:text-md xs:text-sm overflow-hidden whitespace-wrap text-ellipsis">
+							<p>{project.name}</p>
 							{project.stack.map((tech) => StackToImage(tech))}
 						</div>
 					</div>

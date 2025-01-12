@@ -24,18 +24,16 @@ export default function Home() {
 					</label>
 					<a href={linkedinLink} target="_blank" rel="noreferrer">
 						<Image
+							className="h-[30px] w-[30px] min-h-[30px] min-w-[30px] lg:h-[40px] lg:w-[40px] md:h-[30px] md:w-[30px]"
 							src={linkedinLogo}
 							alt="LinkedIn profile"
-							width={40}
-							height={40}
 						/>
 					</a>
 					<a href={githubLink} target="_blank" rel="noreferrer">
 						<Image
+							className="h-[30px] w-[30px] min-h-[30px] min-w-[30px] lg:h-[40px] lg:w-[40px] md:h-[30px] md:w-[30px]"
 							src={githubLogo}
 							alt="Github profile"
-							width={40}
-							height={40}
 						/>
 					</a>
 				</div>
