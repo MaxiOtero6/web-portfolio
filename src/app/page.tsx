@@ -11,9 +11,8 @@ export default function Home() {
 	const githubLink = "https://github.com/MaxiOtero6";
 
 	const aboutMe = `
-		Hi!, I'm Maximiliano Nicolas Otero Silvera a software engineer from Argentina.
-		I'm currently studying software engineering at Universidad de Buenos Aires (UBA).
-		Here I list some of the projects i have worked on, feel free to check them out.
+		Hi!, I'm Maxi a software engineer from Argentina. \
+		I'm currently studying computer science at the University of Buenos Aires (UBA). \n
 	`;
 
 	return (
@@ -41,9 +40,13 @@ export default function Home() {
 					</a>
 				</div>
 
-				<div className="w-11/12 place-self-center p-2">
+				<div className="w-11/12 place-self-center p-2 flex flex-col">
 					<label className="text-lg text-justify font-normal">
 						{aboutMe}
+					</label>
+					<label className="text-lg text-justify font-normal">
+						Here I'm listing some of my favorite projects I have
+						worked on, feel free to check them out.
 					</label>
 				</div>
 			</div>
