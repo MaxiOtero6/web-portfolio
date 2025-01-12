@@ -22,7 +22,7 @@ export default function Home() {
 					<label className="text-4xl font-bold">
 						Maximiliano Nicolas Otero Silvera
 					</label>
-					<a href={linkedinLink}>
+					<a href={linkedinLink} target="_blank" rel="noreferrer">
 						<Image
 							src={linkedinLogo}
 							alt="LinkedIn profile"
@@ -30,7 +30,7 @@ export default function Home() {
 							height={40}
 						/>
 					</a>
-					<a href={githubLink}>
+					<a href={githubLink} target="_blank" rel="noreferrer">
 						<Image
 							src={githubLogo}
 							alt="Github profile"
@@ -45,8 +45,8 @@ export default function Home() {
 						{aboutMe}
 					</label>
 					<label className="text-lg text-justify font-normal">
-						Here I'm listing some of my favorite projects I have
-						worked on, feel free to check them out.
+						{`Here I'm listing some of my favorite projects I have
+						worked on, feel free to check them out.`}
 					</label>
 				</div>
 			</div>
