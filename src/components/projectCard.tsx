@@ -8,7 +8,6 @@ import { useState } from "react";
 import React from "react";
 import { StackToImage } from "@/utils/stackToImage";
 import githubLogo from "@/assets/images/github.png";
-import styles from "@/styles/stackImage.module.css";
 
 interface ProjectCardProps {
 	project: Project;
