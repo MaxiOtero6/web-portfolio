@@ -13,6 +13,9 @@ import fastapi from "@/assets/images/fastapi.png";
 import nextjs from "@/assets/images/nextjs.png";
 import postgresql from "@/assets/images/postgresql.png";
 import mongodb from "@/assets/images/mongodb.png";
+import mysql from "@/assets/images/mysql.png";
+import go from "@/assets/images/go.png";
+import gin from "@/assets/images/gin.png";
 
 function stringToImage(item: string): StaticImageData {
 	switch (item) {
@@ -42,6 +45,12 @@ function stringToImage(item: string): StaticImageData {
 			return postgresql;
 		case "MongoDB":
 			return mongodb;
+		case "MySQL":
+			return mysql;
+		case "Go":
+			return go;
+		case "Gin":
+			return gin;
 		default:
 			return missingTexture;
 	}

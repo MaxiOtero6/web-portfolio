@@ -43,7 +43,7 @@ export default function Home() {
 						{aboutMe}
 					</label>
 					<label className="text-lg text-justify font-normal">
-						{`Here I'm listing some of my favorite projects I have
+						{`Here I'm listing some of my projects I have
 						worked on, feel free to check them out.`}
 					</label>
 				</div>

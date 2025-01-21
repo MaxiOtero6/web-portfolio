@@ -2,6 +2,14 @@ import Project from "@/types/project";
 
 const projects: Project[] = [
 	{
+		name: "Simple auth API",
+		description: `
+			A simple REST-like auth API in Go using the Gin framework, MySQL as a database and JWT for authentication.
+		`,
+		stack: ["Go", "Gin", "MySQL"],
+		githubUrl: "https://github.com/MaxiOtero6/go-auth-rest",
+	},
+	{
 		name: "TwitSnap - X (Twitter) clone",
 		description: `
             This project is a clone of X (Twitter) with a mobile application and 
