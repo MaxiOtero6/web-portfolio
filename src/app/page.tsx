@@ -43,8 +43,11 @@ export default function Home() {
 						{aboutMe}
 					</label>
 					<label className="text-lg text-justify font-normal">
-						{`Here I'm listing some of my projects I have
-						worked on, feel free to check them out.`}
+						{`
+							Here I'm listing some of my projects I have
+							worked on, feel free to check them out. 
+							GitHub icons are clickable and will take you to the repository.
+						`}
 					</label>
 				</div>
 			</div>
