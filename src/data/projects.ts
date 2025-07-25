@@ -2,11 +2,22 @@ import Project from "@/types/project";
 
 const projects: Project[] = [
 	{
+		name: "Distributed movies pipeline",
+		description: `
+			This project consists of a movie pipeline that ingests, processes, and analyzes movie data from kaggle dataset "The Movies Dataset".\n
+			It simulates a fictional scenario in which we build a distributed system to process the data.\n
+			This distributed system must be scalable, highly available, fault-tolerant and serve multiple clients simultaneously.\n
+			It process five fixed queries and return the results to the client (the client must periodically poll the server for results until all are obtained).
+		`,
+		stack: ["Go", "Python", "Protobuf", "RabbitMQ", "Docker"],
+		githubUrl: "https://github.com/MaxiOtero6/TP-Distribuidos",
+	},
+	{
 		name: "Simple auth API",
 		description: `
 			A simple REST-like auth API in Go using the Gin framework, MySQL as a database and JWT for authentication.
 		`,
-		stack: ["Go", "Gin", "MySQL"],
+		stack: ["Go", "Gin", "MySQL", "Docker"],
 		githubUrl: "https://github.com/MaxiOtero6/go-auth-rest",
 	},
 	{
@@ -17,7 +28,7 @@ const projects: Project[] = [
             Below i list the repositories i worked on, to see the whole project click on the Github icon!
         `,
 
-		stack: ["React", "NodeJS", "Python"],
+		stack: ["React", "NodeJS", "Python", "Docker"],
 		githubUrl: "https://github.com/Twit-Snap",
 		repos: [
 			{
@@ -97,7 +108,7 @@ const projects: Project[] = [
             TCP sockets and threads. 
             `,
 
-		stack: ["C++"],
+		stack: ["Cpp"],
 		githubUrl: "https://github.com/MaxiOtero6/TPG-Taller-Worms2D",
 	},
 	{

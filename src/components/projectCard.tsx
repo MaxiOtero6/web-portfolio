@@ -48,9 +48,13 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 			{expanded && (
 				<div className="m-2 flex flex-row">
 					<div>
-						<label className="text-justify text-xs lg:text-lg md:text-md sm:text-sm">
-							{project.description}
-						</label>
+						{project.description.split("\n").map((line, idx) => (
+							<p
+								key={idx}
+								className="text-justify text-xs lg:text-lg md:text-md sm:text-sm">
+								{line}
+							</p>
+						))}
 						{project.repos && (
 							<div className="flex place-items-center flex-col space-y-6 mt-6 w-full">
 								{project.repos.map((repo) => (
