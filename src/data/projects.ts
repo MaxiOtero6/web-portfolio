@@ -13,18 +13,9 @@ const projects: Project[] = [
 		githubUrl: "https://github.com/MaxiOtero6/TP-Distribuidos",
 	},
 	{
-		name: "Simple auth API",
-		description: `
-			A simple REST-like auth API in Go using the Gin framework, MySQL as a database and JWT for authentication.
-		`,
-		stack: ["Go", "Gin", "MySQL", "Docker"],
-		githubUrl: "https://github.com/MaxiOtero6/go-auth-rest",
-	},
-	{
 		name: "TwitSnap - X (Twitter) clone",
 		description: `
-            This project is a clone of X (Twitter) with a mobile application and 
-            a backoffice that consume a microservices architecture.
+            This project is a clone of X (Twitter) with a mobile application and a backoffice that consume a microservices architecture.
             Below i list the repositories i worked on, to see the whole project click on the Github icon!
         `,
 
@@ -80,8 +71,7 @@ const projects: Project[] = [
 			{
 				name: "Message service",
 				description: `
-                    This service allows an authenticated user to send a direct message to another user,
-					saving the chats and messages to a Firebase real-time database.
+                    This service allows an authenticated user to send a direct message to another user, saving the chats and messages to a Firebase real-time database.
                 `,
 
 				stack: ["Python", "FastAPI"],
@@ -92,9 +82,7 @@ const projects: Project[] = [
 	{
 		name: "Distributed Uber-like app with high concurrency",
 		description: `
-            This project is a very simplified version of Uber in Rust using Actix for Actors support 
-            and Tokio for asynchronous functionality support with a main focus on
-            leader selection, deadlock avoidance, and synchronization.
+            This project is a very simplified version of Uber in Rust using Actix for Actors support and Tokio for asynchronous functionality support with a main focus on leader selection, deadlock avoidance, and synchronization.
             `,
 
 		stack: ["Rust"],
@@ -103,9 +91,7 @@ const projects: Project[] = [
 	{
 		name: "Worms Armageddon",
 		description: `
-            This project is a replica of Worms Armageddon in C++11 using SDLpp, QT and 
-            Box2D libraries, designed to run on Linux / Unix systems with a main focus on
-            TCP sockets and threads. 
+            This project is a replica of Worms Armageddon in C++11 using SDLpp, QT and Box2D libraries, designed to run on Linux / Unix systems with a main focus on TCP sockets and threads. 
             `,
 
 		stack: ["Cpp"],
@@ -114,8 +100,7 @@ const projects: Project[] = [
 	{
 		name: "Turn-based tower defense",
 		description: `
-            This project is a turn-based tower defense game in Java using JavaFX library with
-            a main focus on OOP, MVC and design patterns.
+            This project is a turn-based tower defense game in Java using JavaFX library with a main focus on OOP, MVC and design patterns.
             Both the code and documentation are in Spanish.
             `,
 

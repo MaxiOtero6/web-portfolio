@@ -47,7 +47,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 			</div>
 			{expanded && (
 				<div className="m-2 flex flex-row">
-					<div>
+					<div className="w-full">
 						{project.description.split("\n").map((line, idx) => (
 							<p
 								key={idx}
@@ -56,13 +56,15 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 							</p>
 						))}
 						{project.repos && (
-							<div className="flex place-items-center flex-col space-y-6 mt-6 w-full">
-								{project.repos.map((repo) => (
-									<ProjectCard
-										key={repo.githubUrl}
-										project={repo}
-									/>
-								))}
+							<div className="flex place-items-center flex-col w-full">
+								<div className="flex place-items-center flex-col space-y-6 mt-6 mb-6 w-11/12">
+									{project.repos.map((repo) => (
+										<ProjectCard
+											key={repo.githubUrl}
+											project={repo}
+										/>
+									))}
+								</div>
 							</div>
 						)}
 					</div>
