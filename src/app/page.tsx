@@ -6,7 +6,7 @@ import githubLogo from "@/assets/images/github.png";
 
 export default function Home() {
 	const linkedinLink =
-		"https://www.linkedin.com/in/maximiliano-nicolas-otero-silvera-b223201b2";
+		"https://www.linkedin.com/in/maximiliano-nicolas-otero-silvera";
 
 	const githubLink = "https://github.com/MaxiOtero6";
 
